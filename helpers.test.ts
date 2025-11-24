@@ -139,12 +139,12 @@ test("createGroupIndex", () => {
 		id1: {
 			id: "id1",
 			name: "group 1 name",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 		id2: {
 			id: "id2",
 			name: "group 2 name",
-			parrentGroupId: "id1",
+			parentGroupId: "id1",
 		},
 	});
 });
@@ -154,27 +154,27 @@ test("isGroupInTrash", () => {
 		id1: {
 			id: "id1",
 			name: "group 1 name",
-			parrentGroupId: "trashid",
+			parentGroupId: "trashid",
 		},
 		id2: {
 			id: "id2",
 			name: "group 2 name",
-			parrentGroupId: "id1",
+			parentGroupId: "id1",
 		},
 		id3: {
 			id: "id3",
 			name: "group 3 name",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 		id4: {
 			id: "id4",
 			name: "group 4 name",
-			parrentGroupId: "id3",
+			parentGroupId: "id3",
 		},
 		trashid: {
 			id: "trashid",
 			name: "Trash",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 	};
 
@@ -188,22 +188,22 @@ test("isGroupInTrash", () => {
 		id1: {
 			id: "id1",
 			name: "group 1 name",
-			parrentGroupId: "id2",
+			parentGroupId: "id2",
 		},
 		id2: {
 			id: "id2",
 			name: "group 2 name",
-			parrentGroupId: "id3",
+			parentGroupId: "id3",
 		},
 		id3: {
 			id: "id3",
 			name: "group 3 name",
-			parrentGroupId: "id4",
+			parentGroupId: "id4",
 		},
 		id4: {
 			id: "id4",
 			name: "group 4 name",
-			parrentGroupId: "id1",
+			parentGroupId: "id1",
 		},
 	};
 
@@ -260,27 +260,27 @@ test("splitEntryObjectLinesByDeletedStatus", () => {
 		id1: {
 			id: "id1",
 			name: "group 1 name",
-			parrentGroupId: "trashid",
+			parentGroupId: "trashid",
 		},
 		id2: {
 			id: "id2",
 			name: "group 2 name",
-			parrentGroupId: "id1",
+			parentGroupId: "id1",
 		},
 		id3: {
 			id: "id3",
 			name: "group 3 name",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 		id4: {
 			id: "id4",
 			name: "group 4 name",
-			parrentGroupId: "id3",
+			parentGroupId: "id3",
 		},
 		trashid: {
 			id: "trashid",
 			name: "Trash",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 	};
 
@@ -375,27 +375,27 @@ test("formatEntries", () => {
 		id1: {
 			id: "id1",
 			name: "group 1 name",
-			parrentGroupId: "trashid",
+			parentGroupId: "trashid",
 		},
 		id2: {
 			id: "id2",
 			name: "group 2 name",
-			parrentGroupId: "id1",
+			parentGroupId: "id1",
 		},
 		id3: {
 			id: "id3",
 			name: "group 3 name",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 		id4: {
 			id: "id4",
 			name: "group 4 name",
-			parrentGroupId: "id3",
+			parentGroupId: "id3",
 		},
 		trashid: {
 			id: "trashid",
 			name: "Trash",
-			parrentGroupId: null,
+			parentGroupId: null,
 		},
 	};
 

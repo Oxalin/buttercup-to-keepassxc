@@ -21,7 +21,7 @@ export interface LineObject extends Record<string, string | null> {
 export interface GroupInfo {
 	id: string;
 	name: string;
-	parrentGroupId: string | null;
+	parentGroupId: string | null;
 }
 
 export type GroupIndex = Record<string, GroupInfo>;
