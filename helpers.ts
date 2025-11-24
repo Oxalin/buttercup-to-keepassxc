@@ -101,6 +101,7 @@ export const extractExtraFields = (lineObject: LineObject): ExtraFields[] => {
 		"group_name",
 		"group_id",
 		"type",
+		"URL",
 	];
 	const fields: Array<ExtraFields> = [];
 
@@ -164,6 +165,7 @@ export const formatEntries = (
 			name: lo.title || null,
 			password: lo.password || null,
 			username: lo.username || null,
+			url: lo.URL || null,
 			group: groupName || null,
 			notes: notes || null,
 			totp: totp || null,
@@ -193,7 +195,7 @@ export const entriesToKeepassxcFileContent = (
 			e.name,
 			e.username,
 			e.password,
-			"",
+			e.url,
 			e.notes,
 			e.totp,
 			"0",
